@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Escapa del laberinto</title>
+  </head>
+  <body>
+
+    <h1 class="title">Escapa del laberinto</h1>
+
+    <div class="complete">
+      <h3>¡¡Felicitaciones!! ¡¡Completaste el laberinto!!</h3>
+      <button class="replay" id="submit">Jugar de nuevo</button>
+      <button class="close" id="submit">Cerrar</button>
+    </div>
+    
+    <form id="settings" action="">
+      <p>Tamaño del laberinto en pixeles</p>
+      <input id="size" type="number" value="500"/></br>
+      <p>Cantidad de filas y columnas en el laberinto</p>
+      <input id="number" type="number" value="10" /></br>
+      <input id="submit" type="submit" value="Generar Laberinto">
+    </form>
+  
+    <div class="ingame">
+      <canvas class="maze"></canvas>
+      <button class="home" id="submit">Inicio</button>
+    </div>
+
+    <script src="js/maze.js"></script>
+    <script src="js/settings.js"></script>
+  </body>
+</html>
